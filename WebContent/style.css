@@ -1,0 +1,50 @@
+
+.d1{
+	width: 100%;
+	display: flex;
+	background-color: black;
+	padding: 0;
+}
+
+.im1,.im2,.im3{
+	width: 20vw;
+	height: 20vh;
+}
+.im2{
+	color: white;
+	font-family: timesnewroman;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 40px;
+	margin-left: 195px;
+}
+
+.im4{
+	float: right;
+	background-color: white;
+	margin-left: 370px;
+}
+
+.dif{
+	background-color: lightgreen;
+	color: white;
+	font-family: arial;
+}
+
+.menu{
+	display: flex;
+}
+
+.sliderimage{
+	height: 50vh;
+	width: 50vw;
+}
+
+.loanstable{
+	width: 50%;
+	margin-left: 20%;
+}
+
+.bestloan{
+	color: red;
+}

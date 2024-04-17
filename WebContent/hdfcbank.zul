@@ -1,0 +1,44 @@
+<?page title="HDFC Bank" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:pa="native">
+<!--AxisBank.zul-->
+
+    <window title="Loan Information" class="loanstable">
+        <label value="HDFC Bank" style="font-weight:bold;text-align:center; display:block"/>
+        <separator/>
+        <grid>
+            <columns>
+                <column label="Loan Type"/>
+                <column label="Interest Rate"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="Gold Loan"/>
+                    <label value="10%"/>
+                </row>
+                <row>
+                    <label value="Vehicle Loan"/>
+                    <label value="15%"/>
+                </row>
+                <row>
+                    <label value="Education Loan"/>
+                    <label value="8%"/>
+                </row>
+                <row>
+                    <label value="Mortgage Loan"/>
+                    <label value="7%"/>
+                </row>
+                <row>
+                    <label value="Personal Loan"/>
+                    <label value="14%"/>
+                </row>
+                <row>
+                    <label value="Health Loan"/>
+                    <label value="13%"/>
+                </row>
+            </rows>
+        </grid>
+        <separator/>
+        <pa:p>Best Loan of HDFC Bank is <pa:a class="bestloan">'Mortgage Loan'</pa:a	></pa:p>
+    </window>
+
+</zk>

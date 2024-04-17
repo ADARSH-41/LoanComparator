@@ -1,0 +1,44 @@
+<?page title="Canara Bank" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:pa="native">
+<!--CanaraBank.zul-->
+
+    <window title="Loan Information" class="loanstable">
+        <label value="Canara Bank" style="font-weight:bold;text-align:center; display:block"/>
+        <separator/>
+        <grid>
+            <columns>
+                <column label="Loan Type"/>
+                <column label="Interest Rate"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="Gold Loan"/>
+                    <label value="9.3%"/>
+                </row>
+                <row>
+                    <label value="Vehicle Loan"/>
+                    <label value="12.5%"/>
+                </row>
+                <row>
+                    <label value="Education Loan"/>
+                    <label value="6%"/>
+                </row>
+                <row>
+                    <label value="Home Loan"/>
+                    <label value="9%"/>
+                </row>
+                <row>
+                    <label value="Personal Loan"/>
+                    <label value="3%"/>
+                </row>
+                <row>
+                    <label value="Health Loan"/>
+                    <label value="8%"/>
+                </row>
+            </rows>
+        </grid>
+        <separator/>
+        <pa:p>Best Loan of Canara Bank is <pa:a class="bestloan">'Personal Loan'</pa:a	></pa:p>
+    </window>
+
+</zk>

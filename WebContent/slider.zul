@@ -1,0 +1,44 @@
+<?page title="slider" contentType="text/html;charset=UTF-8"?>
+<!-- slides.zul -->
+<zk>
+    <window id="slidesWindow">
+        <div id="sliderContainer" style="overflow: hidden; white-space: nowrap;">
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2014/09/Union-Bank-of-India-500x100.jpg" class="sliderimage"/> 
+            </div>
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2014/09/City-Union-Bank.png"  class="sliderimage"/> 
+         
+            </div>
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2012/04/state-bank-of-india-logo-3-500x377.jpg" class="sliderimage"/> 
+            </div>
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2012/04/Axis-Bank-Logo.jpg" class="sliderimage"/> 
+            </div>
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2014/09/HDFC-Bank.jpg" class="sliderimage"/> 
+            </div>
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2014/09/Punjab-National-Bank.jpg" class="sliderimage"/> 
+            </div>
+            <div class="slide" style=" width: 100%;">
+               <image src="https://www.ranklogos.com/wp-content/uploads/2014/09/Allahabad-Bank-logo-500x350.jpg" class="sliderimage"/> 
+            </div>
+        </div>
+        <script>
+            zk.afterMount(function(){
+                var currentSlideIndex = 0;
+                var slides = document.getElementsByClassName("slide");
+
+                function showNextSlide() {
+                    slides[currentSlideIndex].style.display = "none";
+                    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+                    slides[currentSlideIndex].style.display = "inline-block";
+                }
+
+                setInterval(showNextSlide, 1500);
+            });
+        </script>
+    </window>
+</zk>

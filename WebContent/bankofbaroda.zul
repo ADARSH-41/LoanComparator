@@ -1,0 +1,44 @@
+<?page title=" Bank of Baroda" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:pa="native">
+<!--AxisBank.zul-->
+
+    <window title="Loan Information" class="loanstable">
+        <label value=" Bank of Baroda" style="font-weight:bold;text-align:center; display:block"/>
+        <separator/>
+        <grid>
+            <columns>
+                <column label="Loan Type"/>
+                <column label="Interest Rate"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="Gold Loan"/>
+                    <label value="6%"/>
+                </row>
+                <row>
+                    <label value="Vehicle Loan"/>
+                    <label value="12%"/>
+                </row>
+                <row>
+                    <label value="Education Loan"/>
+                    <label value="8%"/>
+                </row>
+                <row>
+                    <label value="House Renovation Loan"/>
+                    <label value="9%"/>
+                </row>
+                <row>
+                    <label value="Personal Loan"/>
+                    <label value="19%"/>
+                </row>
+                <row>
+                    <label value="Health Loan"/>
+                    <label value="6.5%"/>
+                </row>
+            </rows>
+        </grid>
+        <separator/>
+        <pa:p>Best Loan of  Bank of Baroda is <pa:a class="bestloan">'Gold Loan'</pa:a	></pa:p>
+    </window>
+
+</zk>

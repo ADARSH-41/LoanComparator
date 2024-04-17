@@ -1,0 +1,93 @@
+<zk>
+	<?link rel="stylesheet" type="text/css" href="/style.css"?>
+	<style src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css"/>
+	<script src=""/>
+	<div class="d1">
+		<div>
+			<image class="im1"
+				src="https://i.etsystatic.com/36687311/r/il/4eea51/4097966074/il_570xN.4097966074_8vt3.jpg" />
+		</div>
+		<div class="im2">
+			<html><![CDATA[<h2>BANKING FUNDAS</h2>]]></html>
+		</div>
+		<div class="im4">
+			<image class="im3" src="https://pennanttech.com/wp-content/uploads/2021/08/Pennant-logo-color-1.png" />
+		</div>
+	</div>
+	<div>
+		<html>
+			
+			<![CDATA[
+			<div class="dif">$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</div>
+			<center><h2>CHOOSING LOAN MADE EASY</h2></center>
+			
+			]]>
+			
+		</html>
+	</div>
+	<div class="menu">
+		<div class="banklist">
+	<menubar hflex="min" style=" border: 4px solid black; border-radius:3px;">
+		<menu label="Choose your bank">
+			<menupopup>
+				<menuitem label="Union Bank" onClick='display("union")' image="https://www.ranklogos.com/wp-content/uploads/2014/09/Union-Bank-of-India-500x100.jpg"/>
+				<menuitem label="Axis Bank" onClick='display("axis")' image="https://www.ranklogos.com/wp-content/uploads/2012/04/Axis-Bank-Logo.jpg" />
+				<menuitem label="State Bank of India" onClick='display("sbi")' image="https://www.ranklogos.com/wp-content/uploads/2012/04/state-bank-of-india-logo-3-500x377.jpg"/>
+				<menuitem label="Bank Of India" onClick='display("boi")' image="https://www.ranklogos.com/wp-content/uploads/2012/05/bank-of-india-logo-2-500x291.jpg"/>
+				<menuitem label="Canara Bank" onClick='display("canara")' image="https://www.ranklogos.com/wp-content/uploads/2012/04/Canara-Bank-Logo.png"/>
+				<menuitem label="Bank of Baroda" onClick='display("bobaroda")' image="https://www.ranklogos.com/wp-content/uploads/2012/05/bank-of-baroda-logo-1.jpg"/>
+				<menuitem label="HDFC Bank" onClick='display("hdfc")' image="https://www.ranklogos.com/wp-content/uploads/2014/09/HDFC-Bank.jpg"/>
+				<menuitem label="ICICI Bank" onClick='display("icici")' image="https://www.ranklogos.com/wp-content/uploads/2012/04/ICICI-Bank-Logo.jpg"/>
+				<menuitem label="Kotak Mahindra Bank" onClick='display("kmb")' image="https://www.ranklogos.com/wp-content/uploads/2014/09/Kotak-Mahindra-Bank-500x375.jpg"/>
+			</menupopup>
+		</menu>
+	</menubar>
+	</div>
+		<div class="banks" id="loandetails">
+			<include src="slider.zul" id="loadpage"/>
+		</div>
+	</div>
+	<zscript>
+<![CDATA[
+         void display(String x)
+         {
+        	 if(x.equals("axis"))
+        		 {
+        		 loadpage.setSrc("axisbank.zul");
+        		 }
+        	 if(x.equals("boi"))
+    		 {
+    		 loadpage.setSrc("bankofindia.zul");
+    		 }
+        	 if(x.equals("canara"))
+    		 {
+    		 loadpage.setSrc("canarabank.zul");
+    		 }
+        	 if(x.equals("bobaroda"))
+    		 {
+    		 loadpage.setSrc("bankofbaroda.zul");
+    		 }
+        	 if(x.equals("hdfc"))
+    		 {
+    		 loadpage.setSrc("hdfcbank.zul");
+    		 }
+        	 if(x.equals("icici"))
+    		 {
+    		 loadpage.setSrc("icicibank.zul");
+    		 }
+        	 if(x.equals("kmb"))
+    		 {
+    		 loadpage.setSrc("kotakbank.zul");
+    		 }
+        	 if(x.equals("union"))
+    		 {
+    		 loadpage.setSrc("unionbank.zul");
+    		 }
+        	 if(x.equals("sbi"))
+        	 {
+        		 loadpage.setSrc("statebank.zul");
+        	 }
+         }
+         ]]>
+</zscript>
+</zk>
